@@ -1,0 +1,14 @@
+
+awk '$3 == "foo"' 					// grep from specific column. In this case grep rows where 3rd column has value "foo" from file.txt
+awk 'length>30'						// grep rows with length above specific number of characters
+
+
+sed 's/.$//'						// remove last character from every line
+sed 's/..$//' 						// remove last 2 characters from every line
+sed 's/\.//g'						// remove specific character from every line. In this case delete all "."
+sed 's/\-//g'						// remove specific character from every line. In this case delete all "-"
+tr -d .								// remove specific character from every line. In this case delete all "."
+tr -d -								// remove specific character from every line. In this case delete all "-"
+
+
+grep -E 'warning|error|fatal' file.txt		// grep multiple keywords
