@@ -12,3 +12,7 @@ tr -d -								// remove specific character from every line. In this case delete
 
 
 grep -E 'warning|error|fatal' file.txt		// grep multiple keywords
+
+
+lynx https://.......						// command line text web browser
+telnet towel.blinkenlights.nl				// watch star wars over telnet
