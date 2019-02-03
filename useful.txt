@@ -16,3 +16,10 @@ grep -E 'warning|error|fatal' file.txt		// grep multiple keywords
 
 lynx https://.......						// command line text web browser
 telnet towel.blinkenlights.nl				// watch star wars over telnet
+
+
+///////////////////////////////////// VIM /////////////////////////////////////
+
+:%s/foo/bar/g				// search and replace foo with bar
+:%s/foo/bar/gc				// search and replace with confirmation
+:%s/\<foo\>/bar/gc			// search and replace matching whole word only
