@@ -1,0 +1,37 @@
+#!/bin/bash
+
+###############################################################################
+# maketex
+#
+# script to compile LaTeX documents without producing
+# all those ugly aux/log/out files
+###############################################################################
+
+# stop on errors
+set -e
+
+# usage
+usage() {
+	echo "Usage: $0 *.tex"
+}
+
+# if not enough command line arguments are specificed, show usage and exit
+if [ $# -ne 1 ]; then
+	usage
+	exit 1
+fi
+
+# extract filename without extension
+filename=$(basename -- "$1")
+filename="${filename%.*}"
+
+# get path to directory containing tex file
+path=$(dirname $1)
+
+# compile doc
+pdflatex $1 -output-directory $path/
+
+# remove ugly files
+rm $path/$filename.aux $path/$filename.log $path/$filename.out
+
+echo "Done!"
