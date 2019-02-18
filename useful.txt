@@ -23,3 +23,5 @@ telnet towel.blinkenlights.nl				// watch star wars over telnet
 :%s/foo/bar/g				// search and replace foo with bar
 :%s/foo/bar/gc				// search and replace with confirmation
 :%s/\<foo\>/bar/gc			// search and replace matching whole word only
+
+// add to the beginning of every line: go to visual block (ctrl+v), highlight where to insert, shift+i, type, esc
