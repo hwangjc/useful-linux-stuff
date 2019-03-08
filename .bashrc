@@ -23,8 +23,6 @@
 
 # User dependent .bashrc file
 
-# bashrc file for cygwin JCH
-
 # If not running interactively, don't do anything
 [[ "$-" != *i* ]] && return
 
@@ -199,11 +197,20 @@ alias la='ls -A'                              # all but . and ..
 # 
 # alias cd=cd_func
 
+# use vim baby
+set -o vi
+
+# useful
+cdls() { cd "$@" && ls; }
+
+alias tcgaquery='python /cygdrive/d/2017_2018/triBridge/find_somatic_mutations/tcga_query_generator/tcga_query.py'
+alias notin='python /cygdrive/d/2017_2018/triBridge/find_somatic_mutations/not_in/not_in.py'
 alias tcpdump="/cygdrive/c/WinDump.exe"
 export PATH=$PATH:/cygdrive/d/2017_2018/triBridge/parse_triSearch/windows_bin/
 export PATH=$PATH:/cygdrive/d/2017_2018/triBridge/rel_to_bed/bin_windows/
 
 # for dumb mistakes
+alias l='ls -hF --color=tty'
 alias sl='ls -hF --color=tty'
 alias sls='ls -hF --color=tty'
 alias lls='ls -hF --color=tty'
@@ -213,3 +220,4 @@ alias cdd='cd'
 alias ccd='cd'
 
 alias vi='vim'
+
