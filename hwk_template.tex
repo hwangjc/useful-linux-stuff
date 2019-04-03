@@ -3,6 +3,7 @@
 \usepackage{fullpage} % Package to use full page
 \usepackage{parskip} % Package to tweak paragraph skipping
 \usepackage{tikz} % Package for drawing
+\usepackage{float} % Package for images
 \usepackage{enumitem}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -11,6 +12,7 @@
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{color}
+\usepackage{mathabx}
 
 % for formatting Python code in latex
 
@@ -35,6 +37,10 @@
 }
 \newcommand{\norm}[1]{\left\Vert#1\right\Vert}
 \newcommand{\paren}[1]{\left(#1\right)}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\fancy}[1]{\mathcal{#1}}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\e}{\mathrm{e}}
 \DeclareMathOperator{\sgn}{sgn}
 
 \title{Latex Hwk Template}
