@@ -12,6 +12,7 @@ tr -d -								// remove specific character from every line. In this case delete
 
 
 grep -E 'warning|error|fatal' file.txt		// grep multiple keywords
+grep -rni "string" ./                     // grep recursively from all files in current directory
 
 
 lynx https://.......						// command line text web browser
