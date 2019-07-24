@@ -1,27 +1,30 @@
+//////////////////////////////////// TEXT  /////////////////////////////////////
 
-awk '$3 == "foo"' 					// grep from specific column. In this case grep rows where 3rd column has value "foo" from file.txt
-awk 'length>30'						// grep rows with length above specific number of characters
+awk '$3 == "foo"' // grep from specific column. In this case grep rows where 3rd column has value "foo" from file.txt
+awk 'length>30'	  // grep rows with length above specific number of characters
 
-
-sed 's/.$//'						// remove last character from every line
-sed 's/..$//' 						// remove last 2 characters from every line
-sed 's/\.//g'						// remove specific character from every line. In this case delete all "."
-sed 's/\-//g'						// remove specific character from every line. In this case delete all "-"
-tr -d .								// remove specific character from every line. In this case delete all "."
-tr -d -								// remove specific character from every line. In this case delete all "-"
-
-
-grep -E 'warning|error|fatal' file.txt		// grep multiple keywords
+sed 's/.$//'      // remove last character from every line
+sed 's/..$//'     // remove last 2 characters from every line
+sed 's/\.//g'     // remove specific character from every line. In this case delete all "."
+sed 's/\-//g'     // remove specific character from every line. In this case delete all "-"
+tr -d .           // remove specific character from every line. In this case delete all "."
+tr -d -           // remove specific character from every line. In this case delete all "-"
 
 
-lynx https://.......						// command line text web browser
-telnet towel.blinkenlights.nl				// watch star wars over telnet
-
+grep -E 'warning|error|fatal' file.txt      // grep multiple keywords
+grep -rni 'example' ./                      // grep from all files
 
 ///////////////////////////////////// VIM /////////////////////////////////////
 
-:%s/foo/bar/g				// search and replace foo with bar
-:%s/foo/bar/gc				// search and replace with confirmation
-:%s/\<foo\>/bar/gc			// search and replace matching whole word only
+:%s/foo/bar/g               // search and replace foo with bar
+:%s/foo/bar/gc              // search and replace with confirmation
+:%s/\<foo\>/bar/gc          // search and replace matching whole word only
 
-// add to the beginning of every line: go to visual block (ctrl+v), highlight where to insert, shift+i, type, esc
+// To add to the beginning of multiple lines, go to visual block (ctrl+v), 
+// highlight where to insert, shift+i, type, esc
+
+//////////////////////////////////// RANDOM ////////////////////////////////////
+
+lynx https://.......                        // command line text web browser
+telnet towel.blinkenlights.nl               // watch star wars over telnet
+
