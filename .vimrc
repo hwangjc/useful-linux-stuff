@@ -1,13 +1,23 @@
+"""""""""""""""""""""""""""""""""GLOBAL CONFIGS""""""""""""""""""""""""""""""""
+
 set number				" line numbers
 syntax on
 colorscheme desert
 
 set tabstop=4			" set default to using tabs with appearance of 4 spaces
 set shiftwidth=4
+set softtabstop=0
 set noexpandtab
 
 set autoindent
 set ruler				" shows current line number
+
+"""""""""""""""""""""""""""INDENTATION PER FILE TYPE"""""""""""""""""""""""""""
+
+autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 softtabstop=0 expandtab
+autocmd FileType java setlocal tabstop=4 shiftwidth=4 softtabstop=0 expandtab
+
+"""""""""""""""""""""""""""""""""FILE EXPLORER"""""""""""""""""""""""""""""""""
 
 " File explorer on vertical split on vim launch
 let g:netrw_banner = 0
@@ -19,6 +29,8 @@ augroup ProjectDrawer
   autocmd!
   autocmd VimEnter * :Vexplore
 augroup END
+
+""""""""""""""""""""""""""""""""""""REFERENCE""""""""""""""""""""""""""""""""""
 
 function! UseTabs()
 	set tabstop=4
