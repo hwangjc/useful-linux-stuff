@@ -40,7 +40,7 @@
 # shopt -s nocaseglob
 #
 # Make bash append rather than overwrite the history on disk
-# shopt -s histappend
+shopt -s histappend
 #
 # When changing directory small typos can be ignored by bash
 # for example, cd /vr/lgo/apaache would find /var/log/apache
@@ -203,6 +203,7 @@ set -o vi
 # useful
 cdls() { cd "$@" && ls; }
 
+# cygwin only
 alias tcgaquery='python /cygdrive/d/2017_2018/triBridge/find_somatic_mutations/tcga_query_generator/tcga_query.py'
 alias notin='python /cygdrive/d/2017_2018/triBridge/find_somatic_mutations/not_in/not_in.py'
 alias tcpdump="/cygdrive/c/WinDump.exe"
