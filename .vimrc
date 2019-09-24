@@ -16,6 +16,7 @@ set ruler				" shows current line number
 
 autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 softtabstop=0 expandtab
 autocmd FileType java setlocal tabstop=4 shiftwidth=4 softtabstop=0 expandtab
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=0 expandtab
 
 """""""""""""""""""""""""""""""""FILE EXPLORER"""""""""""""""""""""""""""""""""
 
