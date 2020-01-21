@@ -27,3 +27,9 @@ grep -rni 'example' ./                      // grep from all files, grep recursi
 
 lynx https://.......                        // command line text web browser
 telnet towel.blinkenlights.nl               // watch star wars over telnet
+
+/////////////////////////////////// LINUX /////////////////////////////////////
+
+lsblk          // list all block devices; mount; mounting; mounted;
+lspci          // list all pci devices attached
+lsusb          // list all usb devices attached
